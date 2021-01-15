@@ -5,15 +5,9 @@
   --color-money: #9da4bd;
   --color-money-plus: #9da4bd 60%;
   --color-barber: #ff6c00;
-
-  --font-weight-litle: 400;
-  --font-weight-middle: 600;
-  --font-weight-bold: 700;
 }
 body {
   font-family: "Open Sans", sans-serif;
-  margin: 0;
-  font-weight: var(--font-weight-middle);
   letter-spacing: 0.02em;
   color: #555555;
 }
@@ -27,88 +21,64 @@ a:hover,
 a:focus {
   color: #ff6c00;
 }
-.header-nav {
+/* ================ HEADER ============*/
+.navigation-list-link {
   color: var(--color-title);
   font-size: 12px;
-  line-height: 1.3;
+  line-height: 1.333;
   letter-spacing: 0.1em;
-  display: block;
+  font-weight: 600;
 }
-.header-first {
+.header {
   background-color: black;
 }
-.header-button {
+.modal-buttons {
   font-size: 12px;
-  line-height: 1.3;
+  line-height: 1.333;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   border: 1px solid #ff6c00;
   border-radius: 25px;
+  font-family: inherit;
+  font-weight: 600;
 }
-.header-button:focus,
-.header-button:hover {
+.modal-buttons:focus,
+.modal-buttons:hover {
   background-color: #ff6c00;
   color: var(--color-title);
 }
-.links-style {
-  font-size: 11px;
-  line-height: 1.36;
+.tel-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
 }
-.firstp {
+
+/* ================ END HEADER ============*/
+
+/* ================ HERO ============*/
+.social-links-link {
+  font-weight: 600;
   font-size: 11px;
-  line-height: 1.36;
+  line-height: 1.364;
+}
+
+.subtittle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 .title-hero {
-  font-family: Raleway;
-  font-weight: var(--font-weight-bold);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
   font-size: 72px;
-  line-height: 1.2;
+  line-height: 1.181;
   letter-spacing: 0.05em;
 }
-.text-hero {
-  font-weight: var(--font-weight-litle);
+.description {
+  font-weight: 400;
   font-size: 18px;
-  line-height: 1.66;
-}
-.title-best {
-  font-family: Raleway;
-  font-weight: var(--font-weight-bold);
-  font-size: 42px;
-  line-height: 1.66;
-  letter-spacing: 0.05em;
-}
-.text-barber-one {
-  font-weight: var(--font-weight-litle);
-  font-size: 18px;
-  line-height: 1.66;
-}
-.text-barber-two {
-  font-weight: var(--font-weight-litle);
-  font-size: 14px;
-  line-height: 1.85;
-}
-.title-cost {
-  font-family: Raleway;
-  font-weight: var(--font-weight-bold);
-  font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-}
-.cost-list {
-  font-weight: var(--font-weight-litle);
-  font-size: 18px;
-  line-height: 1.66;
-}
-.many-clients {
-  font-weight: var(--font-weight-bold);
-  font-size: 42px;
-  line-height: 1.35;
-  letter-spacing: 0.05em;
-}
-.clients-happy {
-  font-weight: var(--font-weight-middle);
-  font-size: 11px;
-  line-height: 1.36;
+  line-height: 1.667;
 }
