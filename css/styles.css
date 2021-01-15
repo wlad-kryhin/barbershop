@@ -11,10 +11,11 @@
   --font-weight-bold: 700;
 }
 body {
-  font-family: Open Sans, sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   font-weight: var(--font-weight-middle);
   letter-spacing: 0.02em;
+  color: #555555;
 }
 ul {
   list-style: none;
@@ -43,6 +44,11 @@ a:focus {
   text-transform: uppercase;
   border: 1px solid #ff6c00;
   border-radius: 25px;
+}
+.header-button:focus,
+.header-button:hover {
+  background-color: #ff6c00;
+  color: var(--color-title);
 }
 .links-style {
   font-size: 11px;
