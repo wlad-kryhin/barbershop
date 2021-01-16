@@ -9,7 +9,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.02em;
-  color: #555555;
+  color: var(--color-text);
 }
 ul {
   list-style: none;
@@ -19,8 +19,52 @@ a {
 }
 a:hover,
 a:focus {
-  color: #ff6c00;
+  color: var(--color-barber);
 }
+/* ================ MIX COMPONENTS ============*/
+
+.modal-buttons {
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-barber);
+  border-radius: 25px;
+  font-family: inherit;
+  font-weight: 600;
+}
+.modal-buttons:focus,
+.modal-buttons:hover {
+  background-color: var(--color-barber);
+  color: var(--color-title);
+}
+
+.social-links-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  color: var(--color-about);
+}
+.social-links-link:hover,
+.social-links-link:focus {
+  color: var(--color-barber);
+}
+.subtittle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-about);
+}
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667;
+}
+
+/* ================  END MIX COMPONENTS ============*/
+
 /* ================ HEADER ============*/
 .navigation-list-link {
   color: var(--color-title);
@@ -32,44 +76,18 @@ a:focus {
 .header {
   background-color: black;
 }
-.modal-buttons {
-  font-size: 12px;
-  line-height: 1.333;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-  font-family: inherit;
-  font-weight: 600;
-}
-.modal-buttons:focus,
-.modal-buttons:hover {
-  background-color: #ff6c00;
-  color: var(--color-title);
-}
 .tel-link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.1em;
+  color: var(--color-title);
 }
 
 /* ================ END HEADER ============*/
 
 /* ================ HERO ============*/
-.social-links-link {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.364;
-}
 
-.subtittle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.364;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
 .title-hero {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -77,8 +95,88 @@ a:focus {
   line-height: 1.181;
   letter-spacing: 0.05em;
 }
-.description {
+/* ================ END HERO ============*/
+
+/* ================ ABOUT ============*/
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.667;
+  letter-spacing: 0.05em;
+
+  color: var(--color-title);
+}
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.857;
+}
+/* ================ END ABOUT ============*/
+
+/* ================ SERVICES ============*/
+.services-item-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1, 667;
+}
+.services-item-price {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.667;
 }
+
+/* ================ END SERVICES ============*/
+
+/* ================ ADVANTAGES ============*/
+.advantages-item-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.357;
+  letter-spacing: 0.05em;
+}
+.advantages-item-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+}
+/* ================ END ADVANTAGES ============*/
+
+/* ================ MASTERS ============*/
+.masters-list-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.389;
+}
+.masters-list-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.357;
+}
+/* ================ END MASTERS ============*/
+
+/* ================ GALLERY ============*/
+
+/* ================ END GALLERY ============*/
+
+/* ================ CONTACTS INFO ============*/
+.contacts-info-list-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667;
+}
+.contacts-info-date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667;
+}
+/* ================ END CONTACTS INFO ============*/
+
+/* ================ FOOTER ============*/
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363;
+}
+/* ================ END FOOTER ============*/
