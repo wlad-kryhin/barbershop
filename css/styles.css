@@ -4,7 +4,7 @@
   --color-about: #303030;
   --color-money: #9da4bd;
   --color-money-plus: #9da4bd 60%;
-  --color-barber: #ff6c00;
+  --color-accent: #ff6c00;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -16,26 +16,33 @@ ul {
 }
 a {
   text-decoration: none;
+  font-style: normal;
 }
 a:hover,
 a:focus {
-  color: var(--color-barber);
+  color: var(--color-accent);
 }
 /* ================ MIX COMPONENTS ============*/
-
+.container {
+  width: 1300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .modal-buttons {
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  border: 1px solid var(--color-barber);
+  border: 1px solid var(--color-accent);
   border-radius: 25px;
   font-family: inherit;
   font-weight: 600;
 }
 .modal-buttons:focus,
 .modal-buttons:hover {
-  background-color: var(--color-barber);
+  background-color: var(--color-accent);
   color: var(--color-title);
 }
 
@@ -47,7 +54,7 @@ a:focus {
 }
 .social-links-link:hover,
 .social-links-link:focus {
-  color: var(--color-barber);
+  color: var(--color-accent);
 }
 .subtittle {
   font-weight: 600;
@@ -73,6 +80,13 @@ a:focus {
   letter-spacing: 0.1em;
   font-weight: 600;
 }
+.navigation-list-item {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+.navigation-list-item:not(:last-child) {
+  margin-right: 40px;
+}
 .header {
   background-color: black;
 }
@@ -82,8 +96,24 @@ a:focus {
   line-height: 1.333;
   letter-spacing: 0.1em;
   color: var(--color-title);
+  margin-left: auto;
+  margin-right: 40px;
 }
-
+.navigation-list {
+  display: flex;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.header-position {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+.logotype {
+  margin-right: 72px;
+}
 /* ================ END HEADER ============*/
 
 /* ================ HERO ============*/
@@ -94,6 +124,8 @@ a:focus {
   font-size: 72px;
   line-height: 1.181;
   letter-spacing: 0.05em;
+  color: var(--color-title);
+  background-color: black;
 }
 /* ================ END HERO ============*/
 
@@ -105,7 +137,7 @@ a:focus {
   line-height: 1.667;
   letter-spacing: 0.05em;
 
-  color: var(--color-title);
+  color: var(--color-about);
 }
 .about-text {
   font-weight: 400;
@@ -119,11 +151,13 @@ a:focus {
   font-weight: 400;
   font-size: 18px;
   line-height: 1, 667;
+  color: var(--color-money-plus);
 }
 .services-item-price {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.667;
+  color: var(--color-money-plus);
 }
 
 /* ================ END SERVICES ============*/
@@ -134,11 +168,13 @@ a:focus {
   font-size: 42px;
   line-height: 1.357;
   letter-spacing: 0.05em;
+  color: var(--color-about);
 }
 .advantages-item-description {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.364;
+  color: var(--color-about);
 }
 /* ================ END ADVANTAGES ============*/
 
@@ -147,11 +183,13 @@ a:focus {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.389;
+  color: var(--color-about);
 }
 .masters-list-position {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.357;
+  color: var(--color-accent);
 }
 /* ================ END MASTERS ============*/
 
@@ -164,11 +202,16 @@ a:focus {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.667;
+  color: var(--color-money-plus);
 }
 .contacts-info-date {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.667;
+  color: var(--color-money-plus);
+}
+.contacts-mail-link {
+  text-decoration: underline;
 }
 /* ================ END CONTACTS INFO ============*/
 
@@ -178,5 +221,6 @@ a:focus {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.363;
+  color: var(--color-money-plus);
 }
 /* ================ END FOOTER ============*/
