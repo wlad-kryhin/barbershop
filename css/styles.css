@@ -221,6 +221,9 @@ p {
   line-height: 1.667;
   color: var(--color-money-plus);
 }
+.services-list {
+  display: flex;
+}
 
 /* ================ END SERVICES ============*/
 
@@ -238,14 +241,22 @@ p {
   line-height: 1.364;
   color: var(--color-about);
 }
+.section-advantages .container {
+  display: flex;
+}
 /* ================ END ADVANTAGES ============*/
 
 /* ================ MASTERS ============*/
+.masters-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 .masters-list-name {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.389;
   color: var(--color-about);
+  margin-bottom: 8px;
 }
 .masters-list-position {
   font-weight: 400;
@@ -253,10 +264,37 @@ p {
   line-height: 1.357;
   color: var(--color-accent);
 }
+.masters-list {
+  display: flex;
+  margin: -15px;
+}
+.masters-list-item {
+  margin: 15px;
+}
+.masters-carts-size {
+  padding-top: 30px;
+  padding-right: 82px;
+  padding-left: 82px;
+  padding-bottom: 70px;
+  text-align: center;
+}
 /* ================ END MASTERS ============*/
 
 /* ================ GALLERY ============*/
-
+.gallery-list {
+  display: flex;
+  margin: -15px;
+}
+.gallery-list-item {
+  margin: 15px;
+}
+.gallery-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.gallery-section .subtittle {
+  margin-bottom: 44px;
+}
 /* ================ END GALLERY ============*/
 
 /* ================ CONTACTS INFO ============*/
