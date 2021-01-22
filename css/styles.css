@@ -13,22 +13,38 @@ body {
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
   font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
 }
 a:hover,
 a:focus {
   color: var(--color-accent);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
 /* ================ MIX COMPONENTS ============*/
 .container {
-  width: 1300px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 .modal-buttons {
   font-size: 12px;
@@ -39,6 +55,8 @@ a:focus {
   border-radius: 25px;
   font-family: inherit;
   font-weight: 600;
+  min-width: 160px;
+  padding: 12px 16px;
 }
 .modal-buttons:focus,
 .modal-buttons:hover {
@@ -63,6 +81,7 @@ a:focus {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-about);
+  margin-bottom: 20px;
 }
 .description {
   font-weight: 400;
@@ -80,15 +99,13 @@ a:focus {
   letter-spacing: 0.1em;
   font-weight: 600;
 }
-.navigation-list-item {
-  padding-top: 52px;
-  padding-bottom: 52px;
-}
 .navigation-list-item:not(:last-child) {
   margin-right: 40px;
 }
 .header {
   background-color: black;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .tel-link {
   font-weight: 600;
@@ -101,6 +118,7 @@ a:focus {
 }
 .navigation-list {
   display: flex;
+  align-items: center;
 }
 .navigation {
   display: flex;
@@ -126,6 +144,28 @@ a:focus {
   letter-spacing: 0.05em;
   color: var(--color-title);
   background-color: black;
+  margin-bottom: 20px;
+}
+.hero .container {
+  display: flex;
+}
+.hero-left-side {
+  width: 100px;
+}
+.social-links-list {
+  display: flex;
+}
+.social-links-item:not(:last-child) {
+  margin-right: 40px;
+}
+.hero-right-side {
+  flex-grow: 1;
+  padding-left: 100px;
+  padding-bottom: 206px;
+  padding-top: 272px;
+}
+.hero-right-side .description {
+  max-width: 400px;
 }
 /* ================ END HERO ============*/
 
@@ -143,6 +183,28 @@ a:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.857;
+}
+.section-about {
+  padding-bottom: 130px;
+  padding-top: 130px;
+}
+.section-about .container {
+  display: flex;
+}
+.about-left-side {
+  margin-right: 32px;
+}
+.about-list {
+  display: flex;
+}
+.about-list-item:not(:last-child) {
+  margin-right: 20px;
+}
+.about-right-side {
+  padding-left: 32px;
+}
+.section-about .title {
+  margin-bottom: 20px;
 }
 /* ================ END ABOUT ============*/
 
