@@ -174,15 +174,20 @@ p {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
-  line-height: 1.667;
+  line-height: 1.167;
   letter-spacing: 0.05em;
 
   color: var(--color-about);
+  margin-bottom: 20px;
+}
+.about-right-side .description {
+  margin-bottom: 20px;
 }
 .about-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.857;
+  margin-bottom: 40px;
 }
 .section-about {
   padding-bottom: 130px;
@@ -209,25 +214,48 @@ p {
 /* ================ END ABOUT ============*/
 
 /* ================ SERVICES ============*/
-.services-item-name {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1, 667;
-  color: var(--color-money-plus);
-}
+.services-item-name,
 .services-item-price {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.667;
   color: var(--color-money-plus);
 }
-.services-list {
+.services-section .title {
+  margin-bottom: 44px;
+}
+.services-list-wrapper {
   display: flex;
+  margin-bottom: 50px;
+}
+.services-list {
+  width: 50%;
+  padding: 30px 40px;
+  border: 1px solid #ccc;
+}
+.services-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+.services-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.services-section .modal-buttons {
+  display: block;
+  margin: 0 auto;
+}
+.services-section {
+  padding-bottom: 130px;
+  padding-top: 130px;
 }
 
 /* ================ END SERVICES ============*/
 
 /* ================ ADVANTAGES ============*/
+.section-advantages {
+  padding-bottom: 130px;
+  padding-top: 130px;
+}
 .advantages-item-count {
   font-weight: 700;
   font-size: 42px;
@@ -243,6 +271,37 @@ p {
 }
 .section-advantages .container {
   display: flex;
+}
+.section-advantages .description {
+  max-width: 470px;
+}
+.advantages-left-side {
+  padding-left: 100px;
+  margin-right: 75px;
+}
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 370px;
+}
+.advantages-list-item {
+  width: 170px;
+  min-height: 134px;
+  padding: 20px 21px;
+  background-color: #f7f7f7;
+}
+.advantages-list-item:nth-child(2n) {
+  margin-top: 30px;
+}
+.advantages-list-item:not(:nth-child(2n)) {
+  margin-right: 30px;
+}
+.advantages-right-side .title {
+  max-width: 420px;
+}
+.advantages-right-side {
+  padding-left: 75px;
 }
 /* ================ END ADVANTAGES ============*/
 
@@ -266,6 +325,7 @@ p {
 }
 .masters-list {
   display: flex;
+  flex-wrap: wrap;
   margin: -15px;
 }
 .masters-list-item {
@@ -313,6 +373,22 @@ p {
 .contacts-mail-link {
   text-decoration: underline;
 }
+.contacts-info-list {
+  margin-bottom: 70px;
+}
+.section-contacts-form .container {
+  display: flex;
+}
+.contacts-right-side {
+  margin-left: auto;
+}
+.section-contacts-form {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.contacts-info-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
 /* ================ END CONTACTS INFO ============*/
 
 /* ================ FOOTER ============*/
@@ -322,5 +398,15 @@ p {
   font-size: 11px;
   line-height: 1.363;
   color: var(--color-money-plus);
+}
+.section-footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.section-footer .container {
+  display: flex;
+}
+.social-links-list {
+  margin-left: auto;
 }
 /* ================ END FOOTER ============*/
