@@ -39,6 +39,37 @@ p {
   padding: 0;
   margin: 0;
 }
+
+/*==============ICONS STYLES =================*/
+.list-icon {
+  display: flex;
+}
+.icons-forms {
+  width: 20px;
+  height: 20px;
+}
+.list-icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+.list-icon-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.links-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links-icon:hover,
+.links-icon:focus {
+  fill: var(--color-accent);
+}
+/*==============  END ICONS STYLES =================*/
+
 /* ================ MIX COMPONENTS ============*/
 .container {
   width: 1200px;
@@ -103,7 +134,6 @@ p {
   margin-right: 40px;
 }
 .header {
-  background-color: black;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -143,7 +173,6 @@ p {
   line-height: 1.181;
   letter-spacing: 0.05em;
   color: var(--color-title);
-  background-color: black;
   margin-bottom: 20px;
 }
 .hero .container {
@@ -163,6 +192,8 @@ p {
   padding-left: 100px;
   padding-bottom: 206px;
   padding-top: 272px;
+  background-image: url("../images/headerfoto.jpg");
+  background-size: 1085px 680px;
 }
 .hero-right-side .description {
   max-width: 400px;
@@ -247,6 +278,9 @@ p {
 .services-section {
   padding-bottom: 130px;
   padding-top: 130px;
+  background-image: url("../images/img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* ================ END SERVICES ============*/
@@ -309,6 +343,7 @@ p {
 .masters-section {
   padding-top: 130px;
   padding-bottom: 130px;
+  background: #f7f7f7;
 }
 .masters-list-name {
   font-weight: 400;
@@ -322,6 +357,7 @@ p {
   font-size: 14px;
   line-height: 1.357;
   color: var(--color-accent);
+  margin-bottom: 30px;
 }
 .masters-list {
   display: flex;
@@ -337,6 +373,9 @@ p {
   padding-left: 82px;
   padding-bottom: 70px;
   text-align: center;
+}
+.masters-section .title {
+  margin-bottom: 44px;
 }
 /* ================ END MASTERS ============*/
 
@@ -381,6 +420,7 @@ p {
 }
 .contacts-right-side {
   margin-left: auto;
+  background-color: grey;
 }
 .section-contacts-form {
   padding-top: 130px;
