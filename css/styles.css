@@ -171,6 +171,8 @@ p {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+  position: absolute;
+  width: 100%;
 }
 .tel-link {
   font-weight: 600;
@@ -215,10 +217,16 @@ p {
 }
 .hero-left-side {
   width: 100px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  padding-left: 26px;
 }
 .social-links-list {
   display: flex;
   align-items: center;
+  transform: rotate(-90deg);
+  transform-origin: top left;
 }
 .social-links-list::before {
   content: " ";
@@ -469,12 +477,20 @@ p {
   display: flex;
 }
 .contacts-right-side {
+  padding-top: 130px;
+  padding-left: 130px;
   margin-left: auto;
-  background-color: grey;
+  background-color: #191c26;
+  background-image: url("../images/Bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
 }
 .section-contacts-form {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  background-color: #191c26;
+}
+.contacts-wrapper {
+  display: flex;
 }
 .contacts-info-list-item:not(:last-child) {
   margin-bottom: 20px;
