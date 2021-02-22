@@ -460,6 +460,8 @@ p {
   font-size: 18px;
   line-height: 1.667;
   color: var(--color-money-plus);
+  display: flex;
+  align-items: center;
 }
 .contacts-info-date {
   font-weight: 400;
@@ -477,23 +479,47 @@ p {
   display: flex;
 }
 .contacts-right-side {
-  padding-top: 130px;
-  padding-left: 130px;
-  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contacts-right-side .title {
+  margin-bottom: 40px;
+}
+.contacts-left-side {
+  width: 60%;
+}
+.section-contacts-form {
   background-color: #191c26;
   background-image: url("../images/Bg.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: cover;
-}
-.section-contacts-form {
-  background-color: #191c26;
+  background-size: 50%;
+  padding: 130px 0;
 }
 .contacts-wrapper {
   display: flex;
 }
 .contacts-info-list-item:not(:last-child) {
   margin-bottom: 20px;
+}
+.info-icons {
+  margin-right: 10px;
+}
+.contacts-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.forms-input {
+  width: 270px;
+  background-color: transparent;
+}
+.forms-input-mail {
+  width: 250px;
+  background-color: transparent;
+}
+.forms-label:not(:last-child) {
+  margin-right: 30px;
 }
 /* ================ END CONTACTS INFO ============*/
 

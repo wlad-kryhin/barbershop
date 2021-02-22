@@ -33,7 +33,7 @@
         </ul>
         </nav>
       <a href="tel:+380441111111" class="tel-link">+38 044 111 11 11</a>
-        <button type="button" class="modal-buttons">онлайн-запись</button>
+        <button type="button" class="modal-buttons modal-buttons-color">онлайн-запись</button>
         </div>
     </div>
     </header>
@@ -312,40 +312,52 @@
       </section>
 
       <!--------- CONTACTS FORM   ---------->
-      <section class="section-contacts-form">
-        <h2 class="title">онлайн-запись</h2>
-        <form>
-          <label>
+          <section class="section-contacts-form">
+        <div class="container">
+          <div class="contacts-left-side">
+        <h2 class="title title-dark-theme">Oнлайн-запись</h2>
+        <form class="contacts-form">
+          <label class="forms-label">
             <input type="name" name="name" class="forms-input">
           </label>
+          <label class="forms-label">
+            <input type="email" name="mail" class="forms-input-mail">
+          </label>
           <label>
-            <input >
+            <textarea class="textarea-forms" name="sms"></textarea>
           </label>
         </form>
-    </section>
-      <!------------- CONTACTS INFO ------------->
-      <section class="contacts-right-side">
+        </div>
+             <div class="contacts-right-side">
           <h2 class="title title-dark-theme">Контакты</h2>
-              <address class="adress">
               <ul class="contacts-info-list">
                   <li class="contacts-info-list-item">
-                      <a class="contacts-info-list-link" href="#">ул. Васильковая, 7А
-                    Киев, 08132
-                  <svg class="info-icons"><use href="../images/symbol-defs.svg#map-pin" width="16" height="18"></use></svg>
+                      <a class="contacts-info-list-link" href="#">
+                  <svg class="info-icons" width="16" height="18"><use href="../images/symbol-defs.svg#map-pin"></use></svg>
+                  ул. Васильковая, 7А
+                  Киев, 08132
                 </a>
                     </li>
                   <li class="contacts-info-list-item">
 
-                      <a class="contacts-info-list-link" href="tel:+380441111111">+38 044 111 11 11</a>
+                      <a class="contacts-info-list-link" href="tel:+380441111111">
+                        <svg class="info-icons" width="24" height="24">
+                          <use href="../images/symbol-defs.svg#phone"></use>
+                        </svg>+38 044 111 11 11</a>
                     </li>
                   <li class="contacts-info-list-item">
-                      <a class="contacts-info-list-link contacts-mail-link" href="mailto:barbershop@email.com">barbershop@email.com</a>
+                      <a class="contacts-info-list-link contacts-mail-link" href="mailto:barbershop@email.com">
+                        <svg class="info-icons" width="24" height="24">
+                          <use href="../images/symbol-defs.svg#mail"></use>
+                        </svg>barbershop@email.com</a>
                     </li>
               </ul>
-              </address>
-              <p class="subtittle">время работы</p>
+              <p class="subtittle subtitle-dark-theme">время работы</p>
               <p class="contacts-info-date">Ежедневно с 9:00 до 22:00</p>
+            </div>
+            </div>
       </section>
+    
     </main>
     <!------- FOOTER---------- -->
     <footer class="section-footer">
