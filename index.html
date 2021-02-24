@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"/>
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./csspak/styles.css"/>
 </head>
 <body>
     <header class="header">
@@ -144,19 +144,19 @@
           <div class="advantages-left-side">
           <ul class="advantages-list">
               <li class="advantages-list-item">
-                  <p class="advantages-item-count">600</p>
+                  <p class="advantages-item-count">600<span class="advantages-item-count-plus">&#10010;</span></p>
                   <p class="advantages-item-description">Довольных клиентов в день</p>
               </li>
               <li class="advantages-list-item">
-                  <p class="advantages-item-count">50</p>
+                  <p class="advantages-item-count">50<span class="advantages-item-count-plus">&#10010;</span></p>
                   <p class="advantages-item-description">Наград за отличный сервис</p>
               </li>
               <li class="advantages-list-item">
-                  <p class="advantages-item-count">20</p>
+                  <p class="advantages-item-count">20<span class="advantages-item-count-plus">&#10010;</span></p>
                   <p class="advantages-item-description">Лучших мастеров Киева</p>
               </li>
               <li class="advantages-list-item">
-                  <p class="advantages-item-count">100</p>
+                  <p class="advantages-item-count">100<span class="advantages-item-count-plus">&#10010;</span></p>
                   <p class="advantages-item-description">Подарков постоянным клиентам</p>
               </li>
           </ul>
@@ -318,14 +318,16 @@
         <h2 class="title title-dark-theme">Oнлайн-запись</h2>
         <form class="contacts-form">
           <label class="forms-label">
-            <input type="name" name="name" class="forms-input">
+            <input type="name" name="name" class="forms-input" placeholder="имя*">
           </label>
           <label class="forms-label">
-            <input type="email" name="mail" class="forms-input-mail">
+            <input type="tel" name="tel" class="forms-input forms-input-mail" placeholder="телефон*">
           </label>
-          <label>
-            <textarea class="textarea-forms" name="sms"></textarea>
-          </label>
+          <div class="wrapper-forms"><label class="label-textarea" for="textarena">
+            Cообщение</label>
+          <textarea id="textarena" class="textarea-forms forms-input" name="sms"></textarea></div>
+          <button type="submit" class="modal-buttons modal-buttons-color"> Отправить</button>
+
         </form>
         </div>
              <div class="contacts-right-side">

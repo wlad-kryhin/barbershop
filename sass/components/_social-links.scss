@@ -1,0 +1,10 @@
+.social-links-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  color: var(--color-about);
+}
+.social-links-link:hover,
+.social-links-link:focus {
+  color: var(--color-accent);
+}
