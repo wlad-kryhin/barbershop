@@ -2,6 +2,16 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.667;
+
+  .about-right-side & {
+    margin-bottom: 20px;
+  }
+  .section-advantages & {
+    max-width: 470px;
+  }
+  .hero-right-side & {
+    max-width: 400px;
+  }
 }
 .description-dark-theme {
   color: #9da4bd;

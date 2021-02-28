@@ -1,0 +1,81 @@
+//*** Menu mobile *//
+@media screen and (max-width: 767px) {
+  .navigation .navigation-list,
+  .navigation .modal-buttons,
+  .navigation .tel-link {
+    display: none;
+  }
+}
+.menu-burger,
+.close-menu-mobile {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.header-menu-mobile {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px 40px;
+}
+.menu-mobile-icon,
+.close-svg {
+  width: 40px;
+  height: 40px;
+}
+.close-menu-mobile {
+  position: absolute;
+  right: 9px;
+  top: 9px;
+}
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: absolute;
+  width: 100%;
+}
+.navigation-list-link {
+  color: #303030;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+.navigation-list-item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+.tel-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  color: var(--color-title);
+  margin-left: auto;
+  margin-right: 40px;
+}
+.navigation-list {
+  display: flex;
+  flex-direction: column;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.logotype {
+  // margin-right: 72px;
+  color: #ffffff;
+}
+.logo-img {
+  width: 56px;
+  height: 70px;
+  fill: currentColor;
+}

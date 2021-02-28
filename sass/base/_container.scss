@@ -1,6 +1,21 @@
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 428px;
+    margin: 0 auto;
+  }
+  .header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  // .section-about &,
+  // .section-advantages &,
+  // .section-contacts-form &,
+  // .section-footer &,
+  // .hero & {
+  //   display: flex;
+  // }
 }

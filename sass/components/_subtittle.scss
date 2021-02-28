@@ -8,21 +8,25 @@
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-}
-.subtittle::before {
-  content: "";
-  display: inline-block;
-  width: 50px;
-  height: 2px;
-  background-color: var(--color-about);
-  margin-right: 20px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-about);
+    margin-right: 20px;
+  }
+  .gallery-section & {
+    margin-bottom: 44px;
+  }
 }
 .subtitle-light-theme {
   color: #303030;
 }
-.subtitle-dark-theme::before {
-  background-color: rgba(157, 164, 189, 0.6);
-}
 .subtitle-dark-theme {
   color: rgba(157, 164, 189, 0.6);
+  &::before {
+    background-color: rgba(157, 164, 189, 0.6);
+  }
 }

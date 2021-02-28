@@ -1,0 +1,33 @@
+.title-hero {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.181;
+  letter-spacing: 0.05em;
+  color: var(--color-title);
+  margin-bottom: 20px;
+}
+.hero-left-side {
+  width: 100px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  padding-left: 26px;
+}
+.hero-right-side {
+  flex-grow: 1;
+  padding-left: 100px;
+  padding-bottom: 206px;
+  padding-top: 272px;
+  background-image: url("../images/headerfoto.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-left-side {
+    display: none;
+  }
+}

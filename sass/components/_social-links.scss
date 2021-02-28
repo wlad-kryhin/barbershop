@@ -3,8 +3,35 @@
   font-size: 11px;
   line-height: 1.364;
   color: var(--color-about);
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
 }
-.social-links-link:hover,
-.social-links-link:focus {
-  color: var(--color-accent);
+.social-links-list {
+  // display: flex;
+  // align-items: center;
+
+  .hero & {
+    transform: rotate(-90deg);
+    transform-origin: top left;
+  }
+  &::before {
+    content: " ";
+    width: 60px;
+    height: 1px;
+    background-color: var(--color-about);
+    display: inline-block;
+    flex-shrink: 0;
+    margin-right: 40px;
+  }
+  .section-footer & {
+    margin-left: auto;
+  }
+}
+.social-links-item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
 }
